@@ -1,0 +1,54 @@
+#services.container {
+  background: var(--bg-secondary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#services .title {
+  color: var(--primary);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+#services .sub__heading {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#services .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+#services .service-card .service-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+#services .service-card {
+  display: flex;
+  gap: 1rem;
+}
+
+#services .detail {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+#services .detail .service-description {
+  font-size: 0.8rem;
+}
+
+@media (max-width: 930px) {
+  #services .cards {
+    grid-template-columns: 100%;
+  }
+}
